@@ -1,0 +1,34 @@
+<apex:page standardController="Pet__c" renderAs="pdf">
+
+<table style="font-family:sans-serif; padding-bottom:30px;">
+<tr>
+    <td><apex:image id="logo" value="{!$Resource.logo}" width="60" height="60"/></td>
+    <td style="font:24pt; padding-left:10px; padding-right:250px;">Certificado Pet</td>
+</tr>
+</table>
+
+<table style="border:0.5px solid ###f; font-family:sans-serif;">
+<tr>
+    <td style="padding-right:450px;">Nome do Pet: <apex:outputField value="{!Pet__c.Name}"/></td>
+</tr>
+</table>
+
+<table style="border:0.5px solid ###f; font-family:sans-serif;">
+<tr>
+    <td style="padding-right:450px;">Espécie: <apex:outputField value="{!Pet__c.Especie__c}"/></td>
+</tr>
+</table>
+
+<table style="border:0.5px solid ###f; font-family:sans-serif;">
+<tr>
+    <td style="padding-right:450px;">Raça: <apex:outputField value="{!Pet__c.Raca__c}"/></td>
+</tr>
+</table>
+
+<table style="border:0.5px solid ###f; font-family:sans-serif;">
+<tr>
+    <td style="padding-right:450px;">Data última vacinação: <apex:outputField value="{!Pet__c.DataUltimaVacinacao__c}"/></td>
+</tr>
+</table>
+
+</apex:page>
