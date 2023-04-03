@@ -1,0 +1,5 @@
+<apex:page controller="PetCertificadoCtl" action="getiPet">
+    
+<apex:outputText> {!iPet.Name}</apex:outputText>
+
+</apex:page>
